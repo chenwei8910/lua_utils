@@ -1,2 +1,7 @@
-/Debug/
-/Release/
+# д©б╪
+ipch/
+Debug/
+Release/
+
+# нд╪Ч
+*.user
