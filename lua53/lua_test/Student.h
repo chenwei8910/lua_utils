@@ -13,6 +13,8 @@
 #include<string>
 using namespace std;
 
+#include "Person.h"
+
 class Student
 {
 public:
