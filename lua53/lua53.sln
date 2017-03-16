@@ -11,9 +11,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luac", "luac\luac.vcxproj", "{CA2592D4-25E8-434B-9404-4D946D8B2319}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua_test", "lua_test\lua_test.vcxproj", "{EC5231AF-51D3-47C0-BEAC-65BC7C005D81}"
-	ProjectSection(ProjectDependencies) = postProject
-		{61DE0CF9-6B48-4DD9-BC31-6AC950AA3B9A} = {61DE0CF9-6B48-4DD9-BC31-6AC950AA3B9A}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

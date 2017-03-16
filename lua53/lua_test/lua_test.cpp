@@ -18,18 +18,19 @@ extern "C"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	//1.创建一个state  
+	// 创建一个state  
     lua_State *L = luaL_newstate(); 
 
 	luaL_openlibs(L);  
 
-	/* 加载student类 */
-	//luaL_requiref(L, "student", luaopen_student, 1);
+	// 加载类 
+	luaL_requiref(L, "person", luaopen_person, 1);
+	luaL_requiref(L, "student", luaopen_student, 1);
 
-	/* 运行脚本 */  
-    //luaL_dofile(L, "lua/student.lua"); 
+	// 运行脚本
+    luaL_dofile(L, "lua/student.lua"); 
 
-	luaL_dofile(L, "lua/main.lua"); 
+	//luaL_dofile(L, "lua/main.lua"); 
 
        
     //2.入栈操作  
@@ -44,10 +45,10 @@ int _tmain(int argc, _TCHAR* argv[])
     //    cout<<lua_tonumber(L,2)<<endl;  
     //}  
    
-    //4.关闭state  
+    // 关闭state  
     lua_close(L);  
 
-	/* 暂停 */  
+	// 暂停 
     printf( "Press enter to exit…" );  
     getchar();  
 	return 0;

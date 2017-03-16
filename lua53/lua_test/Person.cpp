@@ -1,23 +1,21 @@
 #include "Person.h"
 
-Person::Person()
+Person::Person():_name("default"), _age(0), _sex(emSex::male)
 {
+	cout<<"Person Contructor called"<<endl;
 }
 
-Person::Person(emSex sex):_sex(sex)
+Person::Person(const string& name, int age, emSex sex):_name(name), _age(age), _sex(sex)
 {
+	cout<<"Person Contructor called"<<endl;
 }
 
 Person::~Person()
 {
+	cout<<"Person Destructor called"<<endl;
 }
 
-void Person::setSex(emSex sex)
+void Person::print()
 {
-	_sex = sex;
-}
-
-Person::emSex Person::getSex() const
-{
-	return _sex;
+    cout<<"My name is: "<<getName()<<", and my age is "<<getAge()<<endl;
 }

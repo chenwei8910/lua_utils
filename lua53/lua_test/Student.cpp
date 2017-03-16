@@ -10,9 +10,13 @@
 
 
 Student::Student()
-:name("default")
 {
     cout<<"Student Contructor called"<<endl;
+}
+
+Student::Student(const string& name, int age, emSex sex, int grade):Person(name, age, sex), _grade(grade)
+{
+	cout<<"Student Contructor called"<<endl;
 }
 
 Student::~Student()
@@ -20,27 +24,7 @@ Student::~Student()
     cout<<"Student Destructor called"<<endl;
 }
 
-string Student::getName()
-{
-    return name;
-}
-
-void Student::setName(string name)
-{
-    this->name = name;
-}
-
-int Student::getAge()
-{
-    return age;
-}
-
-void Student::setAge(int age)
-{
-    this->age = age;
-}
-
 void Student::print()
 {
-    cout<<"My name is: "<<name<<", and my age is "<<age<<endl;
+    cout<<"I`m a student, my name is: "<<getName()<<", and my grade is "<<getGrade()<<endl;
 }

@@ -1,34 +1,17 @@
-//
-//  Student.h
-//  MyCppGame
-//
-//  Created by guanghui on 8/11/14.
-//
-//
-
-#ifndef __MyCppGame__Student__
-#define __MyCppGame__Student__
-
-#include <iostream>
-#include<string>
-using namespace std;
+#pragma once
 
 #include "Person.h"
 
-class Student
+class Student: public Person
 {
 public:
     Student();
+	Student(const string&, int, emSex, int);
     ~Student();
-    string getName();
-    void setName(string name);
-    int getAge();
-    void setAge(int age);
+	int getGrade() const {return _grade;}
+	void setGrade(int grade) { _grade = grade;}
     void print();
     
 private:
-    string name;
-    int age;
+    int _grade;
 };
-
-#endif /* defined(__MyCppGame__Student__) */
