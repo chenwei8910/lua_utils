@@ -1,8 +1,6 @@
 // lua_test.cpp : 定义控制台应用程序的入口点。
 //
 
-#include "stdafx.h"
-
 #include <iostream>  
 #include <string.h>  
 using namespace std; 
@@ -16,19 +14,23 @@ extern "C"
     #include "lualib.h"  
 } 
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
 	// 创建一个state  
     lua_State *L = luaL_newstate(); 
 
-	luaL_openlibs(L);  
+	luaL_openlibs(L); 
 
 	// 加载类 
 	luaL_requiref(L, "person", luaopen_person, 1);
-	luaL_requiref(L, "student", luaopen_student, 1);
+	//luaL_requiref(L, "student", luaopen_student, 1);
 
 	// 运行脚本
-    luaL_dofile(L, "lua/student.lua"); 
+    if(luaL_dofile(L, "lua/student.lua"))
+	{
+		const char* error = luaL_checkstring(L, -1);
+		printf("%s\n", error);
+	}
 
 	//luaL_dofile(L, "lua/main.lua"); 
 

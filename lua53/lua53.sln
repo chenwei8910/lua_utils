@@ -12,6 +12,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luac", "luac\luac.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua_test", "lua_test\lua_test.vcxproj", "{EC5231AF-51D3-47C0-BEAC-65BC7C005D81}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "studentdll", "studentdll\studentdll.vcxproj", "{041D48A3-07E2-42A5-8D13-888062744037}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luadll", "luadll\luadll.vcxproj", "{7E953F35-3C11-4C8B-80E2-EA9FA4B8D2D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -34,6 +38,14 @@ Global
 		{EC5231AF-51D3-47C0-BEAC-65BC7C005D81}.Debug|Win32.Build.0 = Debug|Win32
 		{EC5231AF-51D3-47C0-BEAC-65BC7C005D81}.Release|Win32.ActiveCfg = Release|Win32
 		{EC5231AF-51D3-47C0-BEAC-65BC7C005D81}.Release|Win32.Build.0 = Release|Win32
+		{041D48A3-07E2-42A5-8D13-888062744037}.Debug|Win32.ActiveCfg = Debug|Win32
+		{041D48A3-07E2-42A5-8D13-888062744037}.Debug|Win32.Build.0 = Debug|Win32
+		{041D48A3-07E2-42A5-8D13-888062744037}.Release|Win32.ActiveCfg = Release|Win32
+		{041D48A3-07E2-42A5-8D13-888062744037}.Release|Win32.Build.0 = Release|Win32
+		{7E953F35-3C11-4C8B-80E2-EA9FA4B8D2D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E953F35-3C11-4C8B-80E2-EA9FA4B8D2D6}.Debug|Win32.Build.0 = Debug|Win32
+		{7E953F35-3C11-4C8B-80E2-EA9FA4B8D2D6}.Release|Win32.ActiveCfg = Release|Win32
+		{7E953F35-3C11-4C8B-80E2-EA9FA4B8D2D6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -192,7 +192,7 @@ int l_setName(lua_State *L)
     std::string name = lua_tostring(L, -1);
     p->setName(name);
 
-	return 1;
+	return 0;
 }
 
 int l_getName(lua_State *L)
@@ -215,7 +215,7 @@ int l_setAge(lua_State *L)
     int age = static_cast<int>(luaL_checkinteger(L, -1));
     p->setAge(age);
 
-	return 1;
+	return 0;
 }
 
 int l_getAge(lua_State *L)
@@ -237,7 +237,7 @@ int l_setSex(lua_State *L)
     Person::emSex sex = static_cast<Person::emSex>(luaL_checkinteger(L, -1));
     p->setSex(sex);
 
-	return 1;
+	return 0;
 }
 
 int l_getSex(lua_State *L)
@@ -260,7 +260,7 @@ int l_setGrade(lua_State *L)
     int grade = static_cast<int>(luaL_checkinteger(L, -1));
     p->setGrade(grade);
 
-	return 1;
+	return 0;
 }
 
 int l_getGrade(lua_State *L)
@@ -285,5 +285,5 @@ int l_print(lua_State *L)
 
 	p->print();
 
-	return 1;
+	return 0;
 }
