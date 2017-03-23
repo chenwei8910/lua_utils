@@ -5,6 +5,12 @@
 require ("studentdll.person")
 require ("studentdll.student")
 
+local m_per = package.loaded["person"]
+print("person table: " .. tostring(m_per) .. " " .. tostring(package.loaded["studentdll.person"]))
+
+local m_stu = package.loaded["studentdll.student"]
+print("student table: " .. tostring(m_stu))
+
 --print("new laowang")
 local p = person.new("laowang", 40, 1);
 p:print();

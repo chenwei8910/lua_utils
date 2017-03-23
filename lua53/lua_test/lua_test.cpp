@@ -22,7 +22,7 @@ int main()
 	luaL_openlibs(L); 
 
 	// 加载类 
-	luaL_requiref(L, "person", luaopen_person, 1);
+	//luaL_requiref(L, "person", luaopen_person, 1);
 	//luaL_requiref(L, "student", luaopen_student, 1);
 
 	// 运行脚本
